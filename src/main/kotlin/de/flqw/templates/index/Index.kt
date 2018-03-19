@@ -27,7 +27,7 @@ fun FlowContent.addForm() {
         action = url("/")
         div(classes = "$form_group") {
             label {
-                for_ = "message"
+                htmlFor = "message"
                 +"Message"
             }
             div(classes = "$input_group") {

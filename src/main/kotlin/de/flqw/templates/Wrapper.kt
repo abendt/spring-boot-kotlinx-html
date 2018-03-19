@@ -18,8 +18,12 @@ fun wrapper(pageTitle: String, block: DIV.() -> Unit) = StringWriter().appendHTM
         }
         meta(name = "viewport", content = "width=device-width, initial-scale=1.0")
         link(href = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/flatly/bootstrap.min.css", rel = "stylesheet")
-        script(src = "https://code.jquery.com/jquery-3.1.1.min.js")
-        script(src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js")
+        script(type = ScriptType.textJavaScript) {
+            src = "https://code.jquery.com/jquery-3.1.1.min.js"
+        }
+        script(type = ScriptType.textJavaScript) {
+            src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+        }
     }
     body {
         val time = measureNanoTime {
