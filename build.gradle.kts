@@ -6,7 +6,7 @@ buildscript {
 
 plugins {
     application
-    kotlin("jvm") version "1.2.30"
+    kotlin("jvm") version "1.2.31"
     id("org.springframework.boot") version "2.0.0.RELEASE"
     id("io.spring.dependency-management") version "1.0.4.RELEASE"
 }
